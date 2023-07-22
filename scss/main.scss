@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Dancing+Script&family=Press+Start+2P&family=Rubik+Dirt&family=Satisfy&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    background-color: darkgrey;
+    display: grid;
+    grid-template-columns: .5fr 2fr .2fr .1fr;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas:
+        "logo nombre redes"
+        "logo pages pages"
+    ;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+}
+
+.nombre {
+    grid-area: nombre;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 30px;
+    font-family: 'Rubik Dirt', cursive;
+    text-transform: uppercase;
+}
+
+.redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.pages {
+    grid-area: pages;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.pages a {
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: none;
+    color: snow;
+    padding-bottom: 3px;
+}
+
+.pages a:hover {
+    color: rgb(121, 149, 185);
+}
+
+.header a img {
+    width: 125px;
+}
+
+.header ul img {
+    width: 25px;
+    padding: 4px;
+}
+
+@media (max-width: 740px) {
+    .header {
+        display: grid;
+        grid-template-columns: .5fr 1fr 1fr;
+        grid-template-rows: .5fr .5fr 2fr;
+        grid-template-areas:
+            "logo nombre redes"
+            "logo nombre redes"
+            "pages pages pages"
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .nombre {
+        grid-area: nombre;
+    }
+
+    .redes {
+        grid-area: redes;
+        justify-content: flex-start;
+    }
+
+    .pages {
+        grid-area: pages;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 425px) {
+    .nombre {
+        font-size: medium;
+    }
+
+    .header a img {
+        width: 60px;
+    }
+
+    .header ul img {
+        width: 15px;
+    }
+
+    .pages a {
+        font-family: 'Stick No Bills', sans-serif;
+        font-size: medium;
+    }
+}
+
+/* MAIN */
+
+.tag {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.masvendidos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main img {
+    width: 280px;
+    padding: 10px;
+}
+
+.main p {
+    background-color: rgb(121, 149, 185);
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: rgb(241, 241, 241);
+}
+
+.comentario {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comentario div {
+    border-style: solid;
+    border-color: lightskyblue;
+    padding: 35px;
+}
+
+/* MAIN - PRODUCTOS */
+
+.main-productos {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+        "tag carousel"
+        "navflex carousel"
+    ;
+}
+
+.tag {
+    grid-area: tag;
+}
+
+.navflex {
+    grid-area: navflex;
+}
+
+.carousel {
+    grid-area: carousel;
+}
+
+.carousel {
+    width: 250px;
+}
+
+.nav-link {
+    color: darkslategray !important;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 600 !important;
+    font-size: larger !important;
+}
+
+main ul {
+    list-style-type: none
+}
+
+/* MAIN - GUIA DE TALLES */
+
+.main-talles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    align-items: center;
+    grid-template-areas:
+        "explicacion explicacion explicacion"
+        "medida-h medida-m medida-n"
+    ;
+}
+
+.explicacion {
+    grid-area: explicacion;
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(121, 149, 185);
+}
+
+.medida-h {
+    grid-area: medida-h;
+}
+
+.medida-m {
+    grid-area: medida-m;
+}
+
+.medida-n {
+    grid-area: medida-n;
+}
+
+main div img {
+    width: 580px;
+}
+
+@media (max-width: 740px) {
+    .main-talles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div img {
+        width: 400px;
+    }
+    .explicacion{
+        font-size: 15px;
+        font-weight: bold;
+        color: darkslategray;
+    }
+}
+@media (max-width: 425px){
+    main div img {
+        width: 200px;
+    }
+}
+/* FOOTER */
+
+.footer {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer img {
+    width: 25px;
+}
+
+.fuente {
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+ul a li {
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 16px;
+    color: floralwhite;
+}
