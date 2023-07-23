@@ -92,7 +92,8 @@
   font-size: 25px;
   font-family: 'Stick No Bills', sans-serif;
   font-weight: bold;
-  padding-left: 10px; }
+  padding-left: 10px;
+  padding-top: 10px; }
 
 .masvendidos {
   display: flex;
@@ -111,25 +112,26 @@
   text-align: center;
   font-size: larger;
   font-weight: 600;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: #f1f1f1; }
 
 .comentario {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding-bottom: 10px; }
 
 .comentario div {
   border-style: solid;
   border-color: lightskyblue;
-  padding: 35px; }
+  padding: 40px; }
 
 /* MAIN - PRODUCTOS */
 .main-productos {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 3fr;
-  grid-template-areas: "tag carousel" "navflex carousel"; }
+  grid-template-areas: "tag carousel1" "navflex carousel1" "navflex carousel1"; }
 
 .tag {
   grid-area: tag; }
@@ -137,11 +139,11 @@
 .navflex {
   grid-area: navflex; }
 
-.carousel {
-  grid-area: carousel; }
+.carousel-inner {
+  grid-area: carousel1; }
 
 .carousel {
-  width: 250px; }
+  width: 200px; }
 
 .nav-link {
   color: darkslategray !important;
@@ -169,23 +171,31 @@ main ul {
   color: #7995b9; }
 
 .medida-h {
-  grid-area: medida-h; }
+  grid-area: medida-h;
+  display: flex;
+  justify-content: space-around; }
 
 .medida-m {
-  grid-area: medida-m; }
+  grid-area: medida-m;
+  display: flex;
+  justify-content: space-around; }
 
 .medida-n {
-  grid-area: medida-n; }
+  grid-area: medida-n;
+  display: flex;
+  justify-content: space-around; }
 
 main div img {
-  width: 580px; }
+  width: 425px;
+  padding-top: 51px;
+  padding-bottom: 51px; }
 
 @media (max-width: 740px) {
   .main-talles {
     display: flex;
     flex-direction: column; }
   main div img {
-    width: 400px; }
+    width: 250px; }
   .explicacion {
     font-size: 15px;
     font-weight: bold;
@@ -195,11 +205,40 @@ main div img {
   main div img {
     width: 200px; } }
 
+.tarjetas {
+  width: 500px;
+  padding: 10px; }
+
+.mercadopago {
+  width: 200px;
+  padding: 10px; }
+
+.tag-preguntas {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Stick No Bills', sans-serif;
+  font-weight: bold;
+  padding-left: 15px; }
+
+.preguntas {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 150px;
+  text-align: justify; }
+
+.pregunta-titulo {
+  font-weight: bold; }
+
+.respuestas {
+  padding-top: 10px; }
+
 /* FOOTER */
 .footer {
   background-color: gray;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 15px; }
 
 .footer ul {
   list-style-type: none; }
