@@ -1,0 +1,115 @@
+
+/* HEADER */
+
+.header {
+    background-color: darkgrey;
+    display: grid;
+    grid-template-columns: .5fr 2fr .2fr .1fr;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas:
+        "logo nombre redes"
+        "logo pages pages"
+    ;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+}
+
+.nombre {
+    grid-area: nombre;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 30px;
+    font-family: 'Rubik Dirt', cursive;
+    text-transform: uppercase;
+}
+
+.redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.pages {
+    grid-area: pages;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.pages a {
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: none;
+    color: snow;
+    padding-bottom: 3px;
+}
+
+.pages a:hover {
+    color: rgb(121, 149, 185);
+}
+
+.header a img {
+    width: 125px;
+}
+
+.header ul img {
+    width: 25px;
+    padding: 4px;
+}
+
+@media (max-width: 740px) {
+    .header {
+        display: grid;
+        grid-template-columns: .5fr 1fr 1fr;
+        grid-template-rows: .5fr .5fr 2fr;
+        grid-template-areas:
+            "logo nombre redes"
+            "logo nombre redes"
+            "pages pages pages"
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .nombre {
+        grid-area: nombre;
+    }
+
+    .redes {
+        grid-area: redes;
+        justify-content: flex-start;
+    }
+
+    .pages {
+        grid-area: pages;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 425px) {
+    .nombre {
+        font-size: medium;
+    }
+
+    .header a img {
+        width: 60px;
+    }
+
+    .header ul img {
+        width: 15px;
+    }
+
+    .pages a {
+        font-family: 'Stick No Bills', sans-serif;
+        font-size: medium;
+    }
+}

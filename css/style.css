@@ -101,11 +101,11 @@
   align-items: center;
   justify-content: space-between; }
 
-.main img {
+.main-index img {
   width: 280px;
   padding: 10px; }
 
-.main p {
+.main-index p {
   background-color: #7995b9;
   font-family: 'Stick No Bills', sans-serif;
   text-align: center;

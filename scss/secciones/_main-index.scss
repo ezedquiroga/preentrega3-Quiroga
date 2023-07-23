@@ -1,0 +1,45 @@
+
+/* MAIN */
+
+.tag {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.masvendidos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-index img {
+    width: 280px;
+    padding: 10px;
+}
+
+.main-index p {
+    background-color: rgb(121, 149, 185);
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: rgb(241, 241, 241);
+}
+
+.comentario {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comentario div {
+    border-style: solid;
+    border-color: lightskyblue;
+    padding: 35px;
+}

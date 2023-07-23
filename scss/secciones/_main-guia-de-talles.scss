@@ -1,0 +1,59 @@
+
+/* MAIN - GUIA DE TALLES */
+
+.main-talles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    align-items: center;
+    grid-template-areas:
+        "explicacion explicacion explicacion"
+        "medida-h medida-m medida-n"
+    ;
+}
+
+.explicacion {
+    grid-area: explicacion;
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(121, 149, 185);
+}
+
+.medida-h {
+    grid-area: medida-h;
+}
+
+.medida-m {
+    grid-area: medida-m;
+}
+
+.medida-n {
+    grid-area: medida-n;
+}
+
+main div img {
+    width: 580px;
+}
+
+@media (max-width: 740px) {
+    .main-talles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div img {
+        width: 400px;
+    }
+    .explicacion{
+        font-size: 15px;
+        font-weight: bold;
+        color: darkslategray;
+    }
+}
+@media (max-width: 425px){
+    main div img {
+        width: 200px;
+    }
+}
