@@ -24,7 +24,7 @@
 .medida-h {
     grid-area: medida-h;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 .medida-m {
@@ -36,7 +36,7 @@
 .medida-n {
     grid-area: medida-n;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 main div img {

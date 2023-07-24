@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  box-sizing: initial; }
 
 /* HEADER */
 .header {
@@ -51,7 +52,8 @@
   color: #7995b9; }
 
 .header a img {
-  width: 125px; }
+  width: 125px;
+  box-sizing: unset; }
 
 .header ul img {
   width: 25px;
@@ -173,7 +175,7 @@ main ul {
 .medida-h {
   grid-area: medida-h;
   display: flex;
-  justify-content: space-around; }
+  justify-content: flex-end; }
 
 .medida-m {
   grid-area: medida-m;
@@ -183,7 +185,7 @@ main ul {
 .medida-n {
   grid-area: medida-n;
   display: flex;
-  justify-content: space-around; }
+  justify-content: flex-start; }
 
 main div img {
   width: 425px;
@@ -233,6 +235,49 @@ main div img {
 .respuestas {
   padding-top: 10px; }
 
+.tag-registro {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Stick No Bills', sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 10px; }
+
+.formulario {
+  padding-left: 100px;
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "formulario foto"; }
+
+.formulario-completo {
+  grid-area: formulario;
+  padding-top: 20px; }
+
+.foto {
+  grid-area: foto;
+  padding-right: 70px;
+  width: 1400px; }
+
+.titulo-datos {
+  padding-top: 10px;
+  font-weight: bold; }
+
+.datos {
+  padding-top: 15px;
+  margin-top: 10px;
+  width: 200px; }
+
+.enviar {
+  padding-top: 15px;
+  margin-top: 10px;
+  width: 200px;
+  background-color: #7995b9;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 8px; }
+
 /* FOOTER */
 .footer {
   background-color: gray;
@@ -255,3 +300,8 @@ ul a li {
   font-family: 'Stick No Bills', sans-serif;
   font-size: 16px;
   color: floralwhite; }
+
+.redes-footer {
+  padding-left: 20px;
+  padding-top: 4px;
+  box-sizing: unset; }

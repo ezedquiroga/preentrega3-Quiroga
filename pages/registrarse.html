@@ -40,14 +40,25 @@
         </ul>
     </header>
     <main class="main-registro">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <small class="tag-registro">registrarse</small>
+        <section class="formulario">
+            <form class="formulario-completo" action="#" method="post" enctype="text/plain">
+                <p class="titulo-datos">Nombre de usuario</p>
+                <input class="datos" type="text" placeholder="Nombre de usuario" name="nombre-de-usuario">
+                <p class="titulo-datos">DNI</p>
+                <input class="datos" type="number" placeholder="DNI" name="DNI">
+                <p class="titulo-datos">Fecha de nacimiento</p>
+                <input class="datos" type="date" name="fecha-de-nacimiento">
+                <p class="titulo-datos">Correo electrónico</p>
+                <input class="datos" type="email" placeholder="juan@gmail.com" name="correo-electronico">
+                <p class="titulo-datos">Contraseña</p>
+                <input class="datos" type="password" name="contraseña">
+                <input class="enviar" type="submit" value="Enviar">
+            </form>
+            <div>
+                <img class="foto" src="../img/imagen-fondo.jpg" alt="montaña nevada con esquiador">
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <ul>
@@ -66,9 +77,9 @@
         </ul>
         <ul>
             <li class="fuente">Seguinos</li>
-            <a href="https://www.instagram.com/" target="_blank"><p><img src="../img/Ig-negro.png" alt="Instagram"></p></a>
-            <a href="https://es-la.facebook.com/" target="_blank"><p><img src="../img/facebook-negro.png" alt="Facebook"></p></a>
-            <a href="https://twitter.com/" target="_blank"><p><img src="../img/twitter-negro.png" alt="Twitter"></p></a>
+            <a href="https://www.instagram.com/" target="_blank"><p><img class="redes-footer" src="../img/Ig-negro.png" alt="Instagram"></p></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><p><img class="redes-footer" src="../img/facebook-negro.png" alt="Facebook"></p></a>
+            <a href="https://twitter.com/" target="_blank"><p><img class="redes-footer" src="../img/twitter-negro.png" alt="Twitter"></p></a>
         </ul>
     </footer>
 </body>
