@@ -1,7 +1,15 @@
-
 /* MAIN */
 
-.tag {
+  .tag {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.tag-comentario {
     text-transform: uppercase;
     font-size: 25px;
     font-family: 'Stick No Bills', sans-serif;
@@ -23,15 +31,18 @@
     padding: 10px;
 }
 
-.main-index p {
-    background-color: rgb(121, 149, 185);
-    font-family: 'Stick No Bills', sans-serif;
-    text-align: center;
-    font-size: larger;
-    font-weight: 600;
+.parrafo {
+    background-image: linear-gradient(rgb(121, 149, 185), rgb(238, 232, 232));
     padding-top: 12px;
     padding-bottom: 12px;
-    color: rgb(241, 241, 241);
+
+    .texto {
+        font-family: 'Stick No Bills', sans-serif;
+        text-align: center;
+        font-size: larger;
+        font-weight: 600;
+        color: rgb(94, 87, 87);
+    }
 }
 
 .comentario {
@@ -42,6 +53,17 @@
 
 .comentario div {
     border-style: solid;
-    border-color: lightskyblue;
+    border-color: rgb(118, 118, 119);
+    padding-top: 60px;
     padding: 40px;
+}
+
+@media (max-width: 740px) {
+    .tag-comentario {
+        display: none;
+    }
+
+    .comentario {
+        display: none;
+    }
 }

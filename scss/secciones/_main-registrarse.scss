@@ -10,7 +10,7 @@
 
 .formulario{
     padding-left: 100px;
-    padding-top: 32px;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 2fr 7fr;
     grid-template-rows: 1fr;
@@ -20,7 +20,7 @@
 
 .formulario-completo{
     grid-area: formulario;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .foto{
@@ -48,4 +48,22 @@
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 8px;
+}
+
+@media (max-width: 1300px){
+    .foto{
+        width: 700px;
+    }
+}
+
+@media (max-width: 1024px){
+    .foto{
+        width:600px;
+    }
+}
+
+@media (max-width: 425px){
+    .foto{
+        display: none;
+    }
 }

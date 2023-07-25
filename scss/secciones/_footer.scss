@@ -2,7 +2,7 @@
 /* FOOTER */
 
 .footer {
-    background-color: gray;
+    background-image: linear-gradient(rgb(226, 222, 222), rgb(119, 118, 118));
     display: flex;
     justify-content: space-around;
     padding: 15px;
@@ -25,7 +25,8 @@
 ul a li {
     font-family: 'Stick No Bills', sans-serif;
     font-size: 16px;
-    color: floralwhite;
+    font-weight: bold;
+    color: rgb(58, 55, 55);
 }
 
 .redes-footer{

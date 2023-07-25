@@ -45,7 +45,13 @@ main div img {
     padding-bottom: 51px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 1300px){
+    main div img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 940px) {
     .main-talles {
         display: flex;
         flex-direction: column;

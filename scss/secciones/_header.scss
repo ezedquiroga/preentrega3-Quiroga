@@ -2,7 +2,7 @@
 /* HEADER */
 
 .header {
-    background-color: darkgrey;
+    background-image: linear-gradient(rgb(185, 181, 181), rgb(121, 149, 185));
     display: grid;
     grid-template-columns: .5fr 2fr .2fr .1fr;
     grid-template-rows: .5fr .5fr;
@@ -52,7 +52,7 @@
 }
 
 .pages a:hover {
-    color: rgb(121, 149, 185);
+    color: rgb(51, 81, 121);
 }
 
 .header a img {
@@ -65,7 +65,7 @@
     padding: 4px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 770px) {
     .header {
         display: grid;
         grid-template-columns: .5fr 1fr 1fr;
