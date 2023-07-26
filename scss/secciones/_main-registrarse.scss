@@ -1,11 +1,6 @@
 
 .tag-registro{
-    text-transform: uppercase;
-    font-size: 25px;
-    font-family: 'Stick No Bills', sans-serif;
-    font-weight: bold;
-    padding-left: 10px;
-    padding-top: 10px;
+    @extend .tag;
 }
 
 .formulario{
@@ -23,9 +18,13 @@
     padding-top: 10px;
 }
 
+.imagen{
+    display: flex;
+    align-items: center;
+}
+
 .foto{
     grid-area: foto;
-    padding-right: 70px;
     width: 1400px;
 }
 

@@ -10,10 +10,7 @@
 }
 
 .tag-preguntas{
-    text-transform: uppercase;
-    font-size: 25px;
-    font-family: 'Stick No Bills', sans-serif;
-    font-weight: bold;
+    @extend .tag;
     padding-left: 15px;
 }
 
