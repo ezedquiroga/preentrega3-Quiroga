@@ -25,7 +25,7 @@
 
 .foto{
     grid-area: foto;
-    width: 1400px;
+    width: 1200px;
 }
 
 .titulo-datos{
@@ -51,17 +51,17 @@
 
 @media (max-width: 1300px){
     .foto{
-        width: 700px;
+        width: 930px;
     }
 }
 
 @media (max-width: 1024px){
     .foto{
-        width:600px;
+        width:712px;
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 770px){
     .foto{
         display: none;
     }

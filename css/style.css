@@ -86,7 +86,9 @@
     width: 15px; }
   .pages a {
     font-family: 'Stick No Bills', sans-serif;
-    font-size: medium; } }
+    font-size: medium; }
+  .img-logo {
+    width: 60px; } }
 
 /* MAIN */
 .tag, .tag-comentario, .tag-preguntas, .tag-registro {
@@ -102,7 +104,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-evenly; }
 
 .main-index img {
   width: 280px;
@@ -265,7 +267,7 @@ main div img {
 
 .foto {
   grid-area: foto;
-  width: 1400px; }
+  width: 1200px; }
 
 .titulo-datos {
   padding-top: 10px;
@@ -287,13 +289,13 @@ main div img {
 
 @media (max-width: 1300px) {
   .foto {
-    width: 700px; } }
+    width: 930px; } }
 
 @media (max-width: 1024px) {
   .foto {
-    width: 600px; } }
+    width: 712px; } }
 
-@media (max-width: 425px) {
+@media (max-width: 770px) {
   .foto {
     display: none; } }
 
