@@ -2,7 +2,8 @@
 /* HEADER */
 
 .header {
-    background-image: linear-gradient(rgb(185, 181, 181), rgb(121, 149, 185));
+    background: rgb(250,252,255);
+    background: linear-gradient(0deg, rgba(250,252,255,1) 6%, rgba(196,199,207,1) 21%, rgba(144,152,161,1) 69%);
     display: grid;
     grid-template-columns: .5fr 2fr .2fr .1fr;
     grid-template-rows: .5fr .5fr;
@@ -16,6 +17,7 @@
     grid-area: logo;
     display: flex;
     justify-content: center;
+    width: 180px;
 }
 
 .nombre {
@@ -26,6 +28,10 @@
     font-size: 30px;
     font-family: 'Rubik Dirt', cursive;
     text-transform: uppercase;
+    width: 200px;
+    position: relative;
+    left: -60px;
+    top: 17px;
 }
 
 .redes {
@@ -40,6 +46,9 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
+    position: relative;
+    top: -18px;
+    box-sizing: unset;
 }
 
 .pages a {
@@ -56,7 +65,7 @@
 }
 
 .header a img {
-    width: 125px;
+    width: 120px;
     box-sizing: unset;
 }
 
