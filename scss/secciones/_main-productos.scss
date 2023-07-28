@@ -2,6 +2,7 @@
 /* MAIN - PRODUCTOS */
 
 .main-productos {
+    min-height: 60vh;
     display: grid;
     grid-template-columns: .5fr 2fr;
     grid-template-rows: .1fr .1fr;

@@ -140,6 +140,7 @@
 
 /* MAIN - PRODUCTOS */
 .main-productos {
+  min-height: 60vh;
   display: grid;
   grid-template-columns: .5fr 2fr;
   grid-template-rows: .1fr .1fr;
@@ -301,16 +302,16 @@ main div img {
 
 /* FOOTER */
 .footer {
+  min-height: 10vh;
   background-image: linear-gradient(#e2dede, #777676);
   display: flex;
-  justify-content: space-around;
-  padding: 15px; }
+  justify-content: space-around; }
 
 .footer ul {
   list-style-type: none; }
 
 .footer img {
-  width: 25px; }
+  width: 20px; }
 
 .fuente {
   font-size: large;
@@ -319,11 +320,24 @@ main div img {
 
 ul a li {
   font-family: 'Stick No Bills', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-  color: #3a3737; }
+  color: #3a3737;
+  margin: 5px;
+  max-width: 250px;
+  max-height: 40px; }
 
-.redes-footer {
+.footer-lista, .footer-redes {
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  box-sizing: unset; }
+
+.footer-redes .redes-footer {
   padding-left: 20px;
   padding-top: 4px;
   box-sizing: unset; }
+
+.contacto {
+  position: relative;
+  left: 190px; }
