@@ -2,72 +2,64 @@
 /* MAIN - GUIA DE TALLES */
 
 .main-talles {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .5fr 2fr;
-    align-items: center;
-    grid-template-areas:
-        "explicacion explicacion explicacion"
-        "medida-h medida-m medida-n"
-    ;
+    min-height: 76.9vh;
+}
+
+.medidas{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .explicacion {
-    grid-area: explicacion;
     font-family: 'Stick No Bills', sans-serif;
     text-align: center;
     font-size: 20px;
     font-weight: 600;
     color: rgb(121, 149, 185);
+    position: relative;
+    top: 35px;
 }
 
-.medida-h {
-    grid-area: medida-h;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.medida-m {
-    grid-area: medida-m;
-    display: flex;
-    justify-content: space-around;
-}
-
-.medida-n {
-    grid-area: medida-n;
-    display: flex;
-    justify-content: flex-start;
-}
-
-main div img {
+.medida {
     width: 425px;
     padding-top: 51px;
     padding-bottom: 51px;
+    position: relative;
+    top: 70px;
 }
 
-@media (max-width: 1300px){
-    main div img{
-        width: 300px;
+.medida:hover{
+     width: 550px;
+}
+
+@media (max-width: 1366px){
+    .medida{
+        position: relative;
+        top: 12px;
     }
 }
 
-@media (max-width: 940px) {
-    .main-talles {
+@media (max-width: 770px) {
+    .medidas {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    main div img {
-        width: 250px;
+    .medida{
+        width: 386px;
     }
+
     .explicacion{
         font-size: 15px;
-        font-weight: bold;
-        color: darkslategray;
     }
 }
 @media (max-width: 425px){
     main div img {
         width: 200px;
+    }
+
+    .explicacion{
+        font-size: 13px;
     }
 }

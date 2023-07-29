@@ -1,21 +1,27 @@
 
+.main-registro{
+    min-height: 76.9vh;
+}
+
 .tag-registro{
     @extend .tag;
+    position: absolute;
+    top: 244px;
+    left: 172px;
 }
 
 .formulario{
     padding-left: 100px;
     padding-top: 20px;
-    display: grid;
-    grid-template-columns: 2fr 7fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        "formulario foto";
+    display: flex;
 }
 
 .formulario-completo{
-    grid-area: formulario;
-    padding-top: 10px;
+    width: 250px;
+    padding-top: 107px;
+    position: absolute;
+    top: 208px;
+    left: 180px;
 }
 
 .imagen{
@@ -24,8 +30,10 @@
 }
 
 .foto{
-    grid-area: foto;
-    width: 1200px;
+    width: 1750px;
+    position: relative;
+    top: 81px;
+    left: 90px;
 }
 
 .titulo-datos{
@@ -36,22 +44,38 @@
 .datos{
     padding-top: 15px;
     margin-top: 10px;
-    width: 200px;
+    width: 240px;
+    border: none;
 }
 
 .enviar{
     padding-top: 15px;
     margin-top: 10px;
-    width: 200px;
+    width: 238px;
     background-color: rgb(121, 149, 185);
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 8px;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1366px){
     .foto{
-        width: 930px;
+        width: 1256px;
+        position: relative;
+        top: 57px;
+        left: 64px;
+    }
+    .formulario-completo{
+        width: 250px;
+        padding-top: 107px;
+        position: absolute;
+        top: 160px;
+        left: 180px;
+    }
+    .tag-registro{
+        position: absolute;
+        top: 232px;
+        left: 168px;
     }
 }
 
@@ -64,5 +88,44 @@
 @media (max-width: 770px){
     .foto{
         display: none;
+    }
+
+    .tag-registro{
+        position: absolute;
+        top: 151px;
+        left: 299px;
+    }
+
+    .formulario-completo{
+        position: absolute;
+        top: 115px;
+        left: 251px;
+    }
+
+    .main-registro{
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(178,217,255,1) 50%, rgba(255,255,255,1) 100%);
+    }
+
+    .datos{
+        border: black;
+    }
+
+    @media (max-width: 425px){
+        .formulario-completo{
+            position: absolute;
+            top: 84px;
+            left: 100px;
+        }
+
+        .tag-registro{
+            position: absolute;
+            top: 128px;
+            left: 90px;
+        }
+
+        .titulo-datos{
+            font-size: small;
+        }
     }
 }

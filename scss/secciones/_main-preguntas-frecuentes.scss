@@ -11,7 +11,10 @@
 
 .tag-preguntas{
     @extend .tag;
-    padding-left: 15px;
+    padding-left: 0;
+    position: relative;
+    left: 470px;
+    top: 7px;
 }
 
 .preguntas{
@@ -20,6 +23,8 @@
     padding-left: 20px;
     padding-right: 150px;
     text-align: justify;
+    width: 832px;
+    margin: auto;
 }
 
 .pregunta-titulo{
@@ -28,4 +33,65 @@
 
 .respuestas{
     padding-top: 10px;
+    width: 1012px;
+    margin: auto;
+}
+
+@media (max-width: 1368px){
+    .tag-preguntas{
+        position: relative;
+        left: 205px;
+    }
+}
+
+@media (max-width: 770px){
+    .tag-preguntas{
+        position: relative;
+        left: 22px;
+    }
+
+    .respuestas{
+        width: 606px;
+        position: relative;
+        left: -55px;
+    }
+
+    .tarjetas{
+        position: relative;
+        left: 29px;
+    }
+
+    .mercadopago{
+        position: relative;
+        left: 40px;
+    }
+}
+
+@media (max-width: 425px){
+    .tag-preguntas{
+        font-size: 20px;
+    }
+
+    .pregunta-titulo{
+        font-size: 15px;
+    }
+
+    .respuestas{
+        font-size: 15px;
+        width: 382px;
+        position: relative;
+        left: -226px;
+    }
+
+    .tarjetas{
+        width: 405px;
+        position: relative;
+        left: -25px;
+    }
+
+    .mercadopago{
+        width: 150px;
+        position: relative;
+        left: -15px;
+    }
 }

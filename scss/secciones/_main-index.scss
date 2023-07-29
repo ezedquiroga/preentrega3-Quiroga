@@ -1,6 +1,10 @@
 /* MAIN */
 
-  .tag {
+.main-index{
+    min-height: 76.9vh;
+}
+
+.tag {
     text-transform: uppercase;
     font-size: 25px;
     font-family: 'Stick No Bills', sans-serif;
@@ -27,7 +31,6 @@
 }
 
 .parrafo {
-    background-image: linear-gradient(rgb(121, 149, 185), rgb(238, 232, 232));
     padding-top: 12px;
     padding-bottom: 12px;
 
@@ -53,12 +56,36 @@
     padding: 40px;
 }
 
-@media (max-width: 740px) {
-    .tag-comentario {
+@media (max-width: 770px) {
+    .main-index{
+        min-height: 76.9vh;
+        min-width: 100vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .main-index{
+        min-width: 100vw;
+    }
+
+    .tag-comentario{
         display: none;
     }
 
-    .comentario {
+    .comentario{
         display: none;
+    }
+
+    .parrafo{
+        .texto{
+            width: 400px;
+            margin: 12px;
+            padding-left: 10px;
+            font-size: small;
+        }
+    }
+
+    .tag {
+        font-size: 20px;
     }
 }

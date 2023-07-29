@@ -3,7 +3,9 @@
 
 .footer {
     min-height: 10vh;
-    background-image: linear-gradient(rgb(226, 222, 222), rgb(119, 118, 118));
+    // background-image: linear-gradient(rgb(226, 222, 222), rgb(119, 118, 118));
+    background: rgb(144,152,161);
+    background: linear-gradient(0deg, rgba(144,152,161,1) 0%, rgba(196,199,207,1) 70%, rgba(250,252,255,1) 100%);
     display: flex;
     justify-content: space-around;
 }
@@ -24,7 +26,7 @@
 
 ul a li {
     font-family: 'Stick No Bills', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: rgb(58, 55, 55);
     margin: 5px;
@@ -33,10 +35,15 @@ ul a li {
 }
 
 .footer-lista{
-    max-width: 400px;
+    max-width: 445px;
     display: flex;
     align-items: center;
     box-sizing: unset;
+    margin-bottom: 0;
+    padding-left: 0;
+    :hover{
+        color: snow;
+    }
 }
 
 .footer-redes{
@@ -49,6 +56,40 @@ ul a li {
 }
 
 .contacto{
+    padding-left: 0;
     position: relative;
-    left: 190px;
+    left: 370px;
+}
+
+@media (max-width: 1368px){
+    .contacto{
+        position: relative;
+        left: 200px;
+    }
+}
+
+@media (max-width: 770px){
+    ul a li {
+        font-size: 14px;
+    }
+
+    .contacto{
+        position: relative;
+        left: 23px;
+    }
+
+    .footer-redes{
+        .redes-footer{
+            padding-left: 6px;
+            position: relative;
+            right: 40px;
+        }
+    }   
+}
+
+@media (max-width: 425px){
+    .footer {
+        min-width: 100vw;
+        min-height: 16vh;
+    }
 }
