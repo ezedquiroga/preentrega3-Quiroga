@@ -144,15 +144,20 @@
   .header {
     min-width: 100vw;
     min-height: 16vh; }
+  .menu-hamburguesa {
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: 25px; }
   .bg-dark {
     display: contents;
     background-color: transparent !important; }
-    .bg-dark ul {
-      padding-left: 0; }
-    .bg-dark a li {
+    .bg-dark ul a li {
+      width: 120px;
       color: #696666;
       list-style-type: none;
-      text-align: center; }
+      text-align: center;
+      padding: 2px; }
   .navbar-toggler {
     display: contents; }
     .navbar-toggler .navbar-toggler-icon {
@@ -526,6 +531,9 @@ ul a li {
   position: relative;
   left: 370px; }
 
+.footer-425 {
+  display: none; }
+
 @media (max-width: 1368px) {
   .contacto {
     position: relative;
@@ -545,4 +553,24 @@ ul a li {
 @media (max-width: 425px) {
   .footer {
     min-width: 100vw;
-    min-height: 16vh; } }
+    min-height: 16vh; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .footer .footer-lista, .footer .footer-redes {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5px; }
+      .footer .footer-lista a, .footer .footer-redes a {
+        height: 25px; }
+    .footer .contacto {
+      display: none; }
+    .footer .footer-redes {
+      display: none; }
+    .footer .footer-425 {
+      display: contents; }
+      .footer .footer-425 .contacto-425 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around; } }

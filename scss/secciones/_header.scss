@@ -1,7 +1,7 @@
 
 /* HEADER */
 
-.header {
+.header{
     background: rgb(250,252,255);
     background: linear-gradient(0deg, rgba(250,252,255,1) 6%, rgba(196,199,207,1) 21%, rgba(144,152,161,1) 69%);
     display: grid;
@@ -185,15 +185,22 @@
         min-height: 16vh;
     }
 
+    .menu-hamburguesa{
+        display: flex;
+        position: relative;
+        top: 10px;
+        right: 25px;
+    }
+
     .bg-dark{
         display: contents;
         background-color: transparent !important;
-        ul{
-            padding-left: 0;
-        } a li{
+        ul a li{
+            width: 120px;
             color: rgb(105, 102, 102);
             list-style-type: none;
             text-align: center;
+            padding: 2px;
         }
     }
     
