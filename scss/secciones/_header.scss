@@ -55,6 +55,14 @@
     padding-left: 0;
 }
 
+.bg-dark{
+    display: none;
+}
+
+.navbar-toggler{
+    display: none;
+}
+
 .pages a {
     font-family: 'Stick No Bills', sans-serif;
     font-weight: 600;
@@ -145,6 +153,7 @@
 }
 
 @media (max-width: 425px) {
+    
     .nombre {
         font-size: medium;
         position: relative;
@@ -174,5 +183,32 @@
     .header {
         min-width: 100vw;
         min-height: 16vh;
+    }
+
+    .bg-dark{
+        display: contents;
+        background-color: transparent !important;
+        ul{
+            padding-left: 0;
+        } a li{
+            color: rgb(105, 102, 102);
+            list-style-type: none;
+            text-align: center;
+        }
+    }
+    
+    .navbar-toggler{
+        display: contents;
+        .navbar-toggler-icon{
+            background-color: rgb(128, 141, 153);
+            border-radius: 5px;
+            position: relative;
+            left: 21px;
+            top: 10px;
+        }
+    }
+
+    .pages{
+        display: none;
     }
 }
