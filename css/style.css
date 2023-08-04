@@ -153,7 +153,7 @@
     display: contents;
     background-color: transparent !important; }
     .bg-dark ul a li {
-      width: 120px;
+      width: 122px;
       color: #696666;
       list-style-type: none;
       text-align: center;
@@ -178,7 +178,7 @@
   font-size: 25px;
   font-family: 'Stick No Bills', sans-serif;
   font-weight: bold;
-  padding-left: 10px;
+  padding-left: 50px;
   padding-top: 10px; }
 
 .masvendidos {
@@ -239,7 +239,7 @@
   display: grid;
   grid-template-columns: .5fr 2fr;
   grid-template-rows: .1fr .1fr;
-  grid-template-areas: "tag carousel1" "tag carousel1" "navflex carousel1"; }
+  grid-template-areas: "tag tag" "navflex carousel1"; }
 
 .tag, .tag-comentario, .tag-preguntas, .tag-registro {
   grid-area: tag; }
@@ -248,14 +248,33 @@
   grid-area: navflex;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start; }
+  align-items: center;
+  width: 164px; }
+  .navflex .nav-link {
+    padding-top: 45px; }
 
 .carousel-inner {
-  grid-area: carousel1; }
+  grid-area: carousel1;
+  width: max-content !important; }
 
 .carousel {
   width: 200px; }
+
+.cards {
+  display: flex;
+  gap: 40px; }
+  .cards .card .card-title {
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 800;
+    font-size: 20px; }
+  .cards .card .card-text {
+    font-family: 'Stick No Bills', sans-serif;
+    border-bottom: 1px solid gray;
+    font-size: 20px; }
+  .cards .card .img-logo {
+    box-sizing: unset;
+    width: 100px;
+    padding-left: 71px; }
 
 .nav-link {
   color: darkslategray !important;
@@ -471,7 +490,7 @@ main ul {
   .datos {
     border: black; } }
 
-@media (max-width: 770px) and (max-width: 425px) {
+@media (max-width: 425px) {
   .formulario-completo {
     position: absolute;
     top: 84px;
@@ -481,7 +500,10 @@ main ul {
     top: 128px;
     left: 90px; }
   .titulo-datos {
-    font-size: small; } }
+    font-size: small; }
+  .datos {
+    padding-top: 0;
+    margin-top: 0; } }
 
 /* FOOTER */
 .footer {

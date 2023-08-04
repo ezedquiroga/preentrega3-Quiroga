@@ -110,22 +110,27 @@
     .datos{
         border: black;
     }
+}
 
-    @media (max-width: 425px){
-        .formulario-completo{
-            position: absolute;
-            top: 84px;
-            left: 100px;
-        }
+@media (max-width: 425px){
+    .formulario-completo{
+        position: absolute;
+        top: 84px;
+        left: 100px;
+    }
 
-        .tag-registro{
-            position: absolute;
-            top: 128px;
-            left: 90px;
-        }
+    .tag-registro{
+        position: absolute;
+        top: 128px;
+        left: 90px;
+    }
 
-        .titulo-datos{
-            font-size: small;
-        }
+    .titulo-datos{
+        font-size: small;
+    }
+
+    .datos{
+        padding-top: 0;
+        margin-top: 0;
     }
 }

@@ -7,8 +7,7 @@
     grid-template-columns: .5fr 2fr;
     grid-template-rows: .1fr .1fr;
     grid-template-areas:
-        "tag carousel1"
-        "tag carousel1"
+        "tag tag"
         "navflex carousel1"
     ;
 }
@@ -21,16 +20,42 @@
     grid-area: navflex;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    width: 164px;
+    .nav-link{
+        padding-top: 45px;
+    }
 }
 
 .carousel-inner {
     grid-area: carousel1;
+    width: max-content !important;
 }
 
 .carousel {
     width: 200px;
+}
+
+.cards{
+    display: flex;
+    gap: 40px;
+    .card{
+        .card-title{
+            font-family: 'Stick No Bills', sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        .card-text{
+            font-family: 'Stick No Bills', sans-serif;
+            border-bottom: 1px solid gray;
+            font-size: 20px;
+        }
+        .img-logo{
+            box-sizing: unset;
+            width: 100px;
+            padding-left: 71px;
+        }
+    }
 }
 
 .nav-link {

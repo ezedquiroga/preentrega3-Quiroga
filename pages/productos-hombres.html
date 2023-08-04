@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripcion" content="Tienda de indumentaria para actividades al aire libre, deportes extremos y camping">
+    <meta name="descripcion"
+        content="Tienda de indumentaria para actividades al aire libre, deportes extremos y camping">
     <meta name="keywords" content="campera, pantalon, modelo, marca, hombre, termico, impermeable, esqui, snowboard">
     <link rel="shortcut icon" href="https://i.ibb.co/fHpzhLV/mountaintop-38192.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
@@ -44,11 +45,41 @@
             <a href="../pages/preguntas-frecuentes.html">Preguntas frecuentes</a>
             <a href="../pages/registrarse.html">Registrarse</a>
         </ul>
+        <div class="menu-hamburguesa">
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                <div class="bg-dark p-4">
+                    <ul>
+                        <a href="../index.html">
+                            <li>Inicio</li>
+                        </a>
+                        <a href="./productos.html">
+                            <li>Productos</li>
+                        </a>
+                        <a href="./guia-de-talles.html">
+                            <li>Guia de talles</li>
+                        </a>
+                        <a href="./preguntas-frecuentes.html">
+                            <li>Preguntas frecuentes</li>
+                        </a>
+                        <a href="./registrarse.html">
+                            <li>Registrarse</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
     <main class="main-productos">
-        <br>
         <small class="tag">productos</small>
-        <br>
         <ul class="navflex">
             <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./productos-hombres.html">Hombres</a>
@@ -63,22 +94,40 @@
         <div id="carouselExample" class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://i.ibb.co/tJKhJG1/campera-1.jpg" class="d-block w-100" alt="campera amarilla">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://i.ibb.co/FWnLpRS/campera-3.png" class="d-block w-100" alt="campera azul y naranja">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://i.ibb.co/y6mWzrz/campera-4.jpg" class="d-block w-100" alt="campera negra">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://i.ibb.co/TKnVD6C/campera-5.jpg" class="d-block w-100" alt="campera gris y naranja">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://i.ibb.co/PMkQypj/campera-6.jpg" class="d-block w-100" alt="campera gris">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://i.ibb.co/PYNRfLy/campera-7.jpg" class="d-block w-100" alt="campera con diseño">
+                    <div class="cards">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.ibb.co/tJKhJG1/campera-1.jpg" class="card-img-top" alt="campera amarilla">
+                            <div class="card-body">
+                                <h5 class="card-title">$ 180.000</h5>
+                                <p class="card-text">Campera impermeable 10K Hombre</p>
+                                <img class="img-logo" src="https://i.ibb.co/tmWN3wk/logo-patagonia.png" alt="logo-patagonia">
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.ibb.co/y6mWzrz/campera-4.jpg" class="card-img-top" alt="campera negra">
+                            <div class="card-body">
+                                <h5 class="card-title">$ 310.000</h5>
+                                <p class="card-text">Campera de plumón para climas extremadamente fríos</p>
+                                <img class="img-logo" src="https://i.ibb.co/R2hFwLD/logo-ansilta.png" alt="logo-ansilta">
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.ibb.co/PYNRfLy/campera-7.jpg" alt="campera con diseño">
+                            <div class="card-body">
+                                <h5 class="card-title">$ 250.000</h5>
+                                <p class="card-text">Campera de esqui impermeable Hombre</p>
+                                <img class="img-logo" src="https://i.ibb.co/Y71htwM/logo-burton.png" alt="logo-burton">
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.ibb.co/PMkQypj/campera-6.jpg" alt="campera gris">
+                            <div class="card-body">
+                                <h5 class="card-title">$ 230.000</h5>
+                                <p class="card-text">Campera de esqui impermeable Hombre</p>
+                                <img class="img-logo" src="https://i.ibb.co/Y71htwM/logo-burton.png" alt="logo-burton">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -117,7 +166,8 @@
                 <li><img src="https://i.ibb.co/4gYTgh2/mail-negro.png" alt="Mail"> ezedaqui@gmail.com</li>
             </a>
             <a href="https://goo.gl/maps/Q3N89ou8wLkVNLRv9" target="_blank">
-                <li><img src="https://i.ibb.co/2NpHPwq/Ubicacion.png" alt="Ubicacion"> Gurruchaga 772, C1414DHP CABA</li>
+                <li><img src="https://i.ibb.co/2NpHPwq/Ubicacion.png" alt="Ubicacion"> Gurruchaga 772, C1414DHP CABA
+                </li>
             </a>
         </ul>
         <ul class="footer-redes">
@@ -131,6 +181,28 @@
                 <p><img class="redes-footer" src="https://i.ibb.co/4Mzy3Nz/twitter-negro.png" alt="Twitter"></p>
             </a>
         </ul>
+        <section class="footer-425">
+            <ul class="contacto-425">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <li><img src="https://i.ibb.co/86Sd9BK/wapp-negro.png" alt="Whatsapp"></li>
+                </a>
+                <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">
+                    <li><img src="https://i.ibb.co/4gYTgh2/mail-negro.png" alt="Mail"></li>
+                </a>
+                <a href="https://goo.gl/maps/Q3N89ou8wLkVNLRv9" target="_blank">
+                    <li><img src="https://i.ibb.co/2NpHPwq/Ubicacion.png" alt="Ubicacion"></li>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <p><img class="redes-footer" src="https://i.ibb.co/tLzmCFH/Ig-negro.png" alt="Instagram"></p>
+                </a>
+                <a href="https://es-la.facebook.com/" target="_blank">
+                    <p><img class="redes-footer" src="https://i.ibb.co/q5GkQHh/facebook-negro.png" alt="Facebook"></p>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <p><img class="redes-footer" src="https://i.ibb.co/4Mzy3Nz/twitter-negro.png" alt="Twitter"></p>
+                </a>
+            </ul>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
