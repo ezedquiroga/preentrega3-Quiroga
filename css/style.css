@@ -236,8 +236,9 @@
 /* MAIN - PRODUCTOS */
 .main-productos {
   min-height: 76.9vh;
+  min-width: 100vw;
   display: grid;
-  grid-template-columns: .5fr 2fr;
+  grid-template-columns: .3fr 2fr;
   grid-template-rows: .1fr .1fr;
   grid-template-areas: "tag tag" "navflex carousel1"; }
 
@@ -262,7 +263,14 @@
 
 .cards {
   display: flex;
-  gap: 40px; }
+  flex-wrap: wrap;
+  width: 1522px;
+  gap: 20px; }
+  .cards :hover {
+    border-color: #797575;
+    border-width: 2px; }
+  .cards .card img {
+    border-radius: 5px; }
   .cards .card .card-title {
     font-family: 'Stick No Bills', sans-serif;
     font-weight: 800;
@@ -284,6 +292,25 @@
 
 main ul {
   list-style-type: none; }
+
+@media (max-width: 1368px) {
+  .cards {
+    width: 1210px; } }
+
+@media (max-width: 770px) {
+  .cards {
+    width: 700px; } }
+
+@media (max-width: 425px) {
+  .cards {
+    padding-left: 70px;
+    width: 420px;
+    gap: 10px; }
+  .main-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr .1fr 1fr;
+    grid-template-areas: "tag" "navflex" "carousel1"; } }
 
 /* MAIN - GUIA DE TALLES */
 .main-talles {
