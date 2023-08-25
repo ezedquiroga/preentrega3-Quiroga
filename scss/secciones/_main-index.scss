@@ -25,9 +25,35 @@
     justify-content: space-evenly;
 }
 
-.main-index img {
-    width: 280px;
-    padding: 10px;
+.cards-index{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1522px;
+    gap: 20px;
+    :hover{
+        border-color: rgb(121, 117, 117);
+        border-width: 2px;
+    }
+    .card{
+        img{
+            border-radius: 5px;
+        }
+        .card-title{
+            font-family: 'Stick No Bills', sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        .card-text{
+            font-family: 'Stick No Bills', sans-serif;
+            border-bottom: 1px solid gray;
+            font-size: 20px;
+        }
+        .img-logo{
+            box-sizing: unset;
+            width: 100px;
+            padding-left: 71px;
+        }
+    }
 }
 
 .parrafo {
@@ -43,17 +69,29 @@
     }
 }
 
-.comentario {
+.cards-coment{
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 10px;
-}
-
-.comentario div {
-    border-style: solid;
-    border-color: rgb(118, 118, 119);
-    padding-top: 60px;
-    padding: 40px;
+    flex-wrap: wrap;
+    width: 1522px;
+    gap: 20px;
+    .card{
+        img{
+            width: 60px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        .card-title{
+            font-family: 'Stick No Bills', sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        .card-text{
+            font-family: 'Stick No Bills', sans-serif;
+            border-bottom: 1px solid gray;
+            font-size: 20px;
+            text-align: justify;
+        }
+    }
 }
 
 @media (max-width: 770px) {
