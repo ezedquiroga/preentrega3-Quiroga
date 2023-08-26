@@ -104,6 +104,15 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .cards-index{
+        width: 912px;
+    }
+    .cards-coment {
+        width: 914px;
+        padding-left: 38px;
+    }
+}
 @media (max-width: 770px) {
     .main-index{
         min-height: 76.9vh;

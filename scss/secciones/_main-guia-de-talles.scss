@@ -39,6 +39,12 @@
     }
 }
 
+@media (max-width: 1024px){
+    .medida{
+        width: 325px;
+    }
+}
+
 @media (max-width: 770px) {
     .medidas {
         display: flex;

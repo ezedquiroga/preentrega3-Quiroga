@@ -103,6 +103,22 @@ main ul {
     }
 }
 
+@media (max-width: 1024px){
+    .cards {
+    width: 838px;
+    }
+    .carousel-control-next-icon{
+        position: fixed;
+        top: 438px;
+        left: 847px;
+    }
+    .carousel-control-prev-icon{
+        position: fixed;
+        top: 438px;
+        left: 287px;
+    }
+}
+
 @media (max-width: 770px){
     .cards{
         width: 600px;

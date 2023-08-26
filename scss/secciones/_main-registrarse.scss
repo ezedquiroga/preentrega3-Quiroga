@@ -93,7 +93,24 @@
 
 @media (max-width: 1024px){
     .foto{
-        width:712px;
+        position: relative;
+        top: 174px;
+        left: 100px;
+        width:982px;
+        margin: -71px;
+    }
+    .formulario-completo{
+        padding-top: 287px;
+        position: absolute;
+        top: 0px;
+    }
+    .titulo-datos{
+        margin-bottom: -3px;
+        margin-top: -8px;
+    }
+    .main-registro{
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(178,217,255,1) 50%, rgba(255,255,255,1) 100%);
     }
 }
 

@@ -71,6 +71,13 @@ ul a li {
     }
 }
 
+@media (max-width: 1024px){
+    .contacto{
+        position: relative;
+        left: 80px;
+    }
+}
+
 @media (max-width: 770px){
     ul a li {
         font-size: 14px;

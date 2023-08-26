@@ -1,15 +1,14 @@
-
-.tarjetas{
+.tarjetas {
     width: 500px;
     padding: 10px;
 }
 
-.mercadopago{
+.mercadopago {
     width: 200px;
     padding: 10px;
 }
 
-.tag-preguntas{
+.tag-preguntas {
     @extend .tag;
     padding-left: 0;
     position: relative;
@@ -17,7 +16,7 @@
     top: 7px;
 }
 
-.preguntas{
+.preguntas {
     padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -27,69 +26,79 @@
     margin: auto;
 }
 
-.pregunta-titulo{
+.pregunta-titulo {
     font-weight: bold;
 }
 
-.respuestas{
+.respuestas {
     padding-top: 10px;
     width: 1012px;
     margin: auto;
 }
 
-@media (max-width: 1368px){
-    .tag-preguntas{
+@media (max-width: 1368px) {
+    .tag-preguntas {
         position: relative;
         left: 205px;
     }
 }
 
-@media (max-width: 770px){
-    .tag-preguntas{
+@media (max-width: 1024px) {
+    .tag-preguntas {
+        position: relative;
+        left: 28px;
+    }
+    .respuestas {
+        width: 946px;
+    }
+}
+
+@media (max-width: 770px) {
+    .tag-preguntas {
         position: relative;
         left: 22px;
     }
 
-    .respuestas{
+    .respuestas {
         width: 606px;
         position: relative;
         left: -55px;
     }
 
-    .tarjetas{
+    .tarjetas {
         position: relative;
         left: 29px;
     }
 
-    .mercadopago{
+    .mercadopago {
         position: relative;
         left: 40px;
     }
 }
 
-@media (max-width: 425px){
-    .tag-preguntas{
+@media (max-width: 425px) {
+    .tag-preguntas {
         font-size: 20px;
     }
 
-    .pregunta-titulo{
+    .pregunta-titulo {
         font-size: 15px;
     }
 
-    .respuestas{
+    .respuestas {
         font-size: 15px;
         width: 382px;
         position: relative;
         left: -226px;
     }
 
-    .tarjetas{
+    .tarjetas {
         width: 405px;
         position: relative;
         left: -25px;
     }
 
-    .mercadopago{
+    .mercadopago {
         width: 150px;
         position: relative;
         left: -15px;
