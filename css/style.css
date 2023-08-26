@@ -98,7 +98,7 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    right: 40px; }
+    right: 68px; }
   .pages {
     grid-area: pages; } }
 
@@ -147,7 +147,7 @@
   .menu-hamburguesa {
     display: flex;
     position: relative;
-    top: 10px;
+    top: -8px;
     right: 25px; }
   .bg-dark {
     display: contents;
@@ -192,7 +192,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 1522px;
-  gap: 20px; }
+  gap: 20px;
+  justify-content: space-between; }
   .cards-index :hover {
     border-color: #797575;
     border-width: 2px; }
@@ -225,7 +226,9 @@
   display: flex;
   flex-wrap: wrap;
   width: 1522px;
-  gap: 20px; }
+  gap: 20px;
+  padding-left: 175px;
+  justify-content: space-between; }
   .cards-coment .card img {
     width: 60px;
     padding-top: 10px;
@@ -240,14 +243,28 @@
     font-size: 20px;
     text-align: justify; }
 
+@media (max-width: 1368px) {
+  .cards-coment {
+    width: 1334px;
+    padding-left: 0px; } }
+
 @media (max-width: 770px) {
   .main-index {
     min-height: 76.9vh;
-    min-width: 100vw; } }
+    min-width: 100vw; }
+  .cards-index {
+    width: 630px; }
+  .cards-coment {
+    width: 630px;
+    padding-left: 50px; } }
 
 @media (max-width: 425px) {
   .main-index {
     min-width: 100vw; }
+  .cards-index {
+    width: 274px; }
+    .cards-index .card img {
+      padding-left: 37px; }
   .tag-comentario {
     display: none; }
   .comentario {
@@ -288,6 +305,17 @@
 .carousel {
   width: 200px; }
 
+.carousel-control-prev-icon {
+  background-color: dimgray;
+  position: relative;
+  top: 50px; }
+
+.carousel-control-next-icon {
+  background-color: dimgray;
+  position: relative;
+  top: 50px;
+  left: 1320px; }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -322,26 +350,51 @@ main ul {
 
 @media (max-width: 1368px) {
   .cards {
-    width: 1210px; } }
+    width: 1180px;
+    justify-content: center; }
+  .carousel-control-next-icon {
+    left: 969px; } }
 
 @media (max-width: 770px) {
   .cards {
-    width: 700px; } }
+    width: 600px;
+    gap: 10px;
+    position: relative;
+    top: 0px;
+    left: -6px; }
+  .carousel-control-next-icon {
+    position: fixed;
+    top: 408px;
+    left: 719px; }
+  .carousel-control-prev-icon {
+    position: fixed;
+    top: 408px;
+    left: 165px; } }
 
 @media (max-width: 425px) {
   .cards {
     padding-left: 70px;
     width: 420px;
     gap: 10px; }
+    .cards .card {
+      align-items: center; }
   .main-productos {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .1fr .1fr 1fr;
-    grid-template-areas: "tag" "navflex" "carousel1"; } }
+    grid-template-areas: "tag" "navflex" "carousel1"; }
+  .carousel-control-next-icon {
+    position: fixed;
+    top: 625px;
+    left: 351px; }
+  .carousel-control-prev-icon {
+    position: fixed;
+    top: 625px;
+    left: 95px; } }
 
 /* MAIN - GUIA DE TALLES */
 .main-talles {
-  min-height: 76.9vh; }
+  min-height: 75.5vh; }
 
 .medidas {
   display: flex;
@@ -366,7 +419,7 @@ main ul {
 .medida:hover {
   width: 550px; }
 
-@media (max-width: 1366px) {
+@media (max-width: 1368px) {
   .medida {
     position: relative;
     top: 12px; } }
@@ -378,6 +431,8 @@ main ul {
     align-items: center; }
   .medida {
     width: 386px; }
+    .medida :hover {
+      width: 500px; }
   .explicacion {
     font-size: 15px; } }
 
@@ -458,12 +513,12 @@ main ul {
     left: -15px; } }
 
 .main-registro {
-  min-height: 76.9vh; }
+  min-height: 75.5vh; }
 
 .tag-registro {
   position: absolute;
-  top: 244px;
-  left: 172px; }
+  top: 203px;
+  left: 186px; }
 
 .formulario {
   padding-left: 100px;
@@ -474,7 +529,7 @@ main ul {
   width: 250px;
   padding-top: 107px;
   position: absolute;
-  top: 208px;
+  top: 140px;
   left: 180px; }
 
 .imagen {
@@ -506,7 +561,7 @@ main ul {
   font-weight: bold;
   padding-bottom: 8px; }
 
-@media (max-width: 1366px) {
+@media (max-width: 1368px) {
   .foto {
     width: 1256px;
     position: relative;
@@ -516,24 +571,35 @@ main ul {
     width: 250px;
     padding-top: 107px;
     position: absolute;
-    top: 160px;
+    top: 1px;
     left: 180px; }
+  .titulo-datos {
+    margin-bottom: 7px; }
+  .datos {
+    padding-top: 0px; }
   .tag-registro {
     position: absolute;
-    top: 232px;
-    left: 168px; } }
+    top: 182px;
+    left: 13px; }
+  .enviar {
+    height: 10px;
+    font-size: small;
+    padding-top: 7px;
+    padding-bottom: 14px; } }
 
 @media (max-width: 1024px) {
   .foto {
     width: 712px; } }
 
 @media (max-width: 770px) {
+  .main-registro {
+    min-height: 68.5vh; }
   .foto {
     display: none; }
   .tag-registro {
     position: absolute;
     top: 151px;
-    left: 299px; }
+    left: 258px; }
   .formulario-completo {
     position: absolute;
     top: 115px;
@@ -547,12 +613,12 @@ main ul {
 @media (max-width: 425px) {
   .formulario-completo {
     position: absolute;
-    top: 84px;
-    left: 100px; }
+    top: 156px;
+    left: 93px; }
   .tag-registro {
     position: absolute;
-    top: 128px;
-    left: 90px; }
+    top: 217px;
+    left: 114px; }
   .titulo-datos {
     font-size: small; }
   .datos {
@@ -620,7 +686,7 @@ ul a li {
     font-size: 14px; }
   .contacto {
     position: relative;
-    left: 23px; }
+    left: -14px; }
   .footer-redes .redes-footer {
     padding-left: 6px;
     position: relative;

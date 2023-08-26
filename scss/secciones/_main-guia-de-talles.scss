@@ -2,7 +2,7 @@
 /* MAIN - GUIA DE TALLES */
 
 .main-talles {
-    min-height: 76.9vh;
+    min-height: 75.5vh;
 }
 
 .medidas{
@@ -32,7 +32,7 @@
      width: 550px;
 }
 
-@media (max-width: 1366px){
+@media (max-width: 1368px){
     .medida{
         position: relative;
         top: 12px;
@@ -48,6 +48,9 @@
 
     .medida{
         width: 386px;
+        :hover{
+            width: 500px;
+        }
     }
 
     .explicacion{

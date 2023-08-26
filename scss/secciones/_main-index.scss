@@ -30,6 +30,7 @@
     flex-wrap: wrap;
     width: 1522px;
     gap: 20px;
+    justify-content: space-between;
     :hover{
         border-color: rgb(121, 117, 117);
         border-width: 2px;
@@ -74,6 +75,8 @@
     flex-wrap: wrap;
     width: 1522px;
     gap: 20px;
+    padding-left: 175px;
+    justify-content: space-between;
     .card{
         img{
             width: 60px;
@@ -94,16 +97,41 @@
     }
 }
 
+@media (max-width: 1368px) {
+    .cards-coment{
+        width: 1334px;
+        padding-left: 0px;
+    }
+}
+
 @media (max-width: 770px) {
     .main-index{
         min-height: 76.9vh;
         min-width: 100vw;
+    }
+
+    .cards-index{
+        width: 630px;
+    }
+
+    .cards-coment{
+        width: 630px;
+        padding-left: 50px;
     }
 }
 
 @media (max-width: 425px) {
     .main-index{
         min-width: 100vw;
+    }
+
+    .cards-index{
+        width: 274px;
+        .card{
+            img{
+                padding-left: 37px;
+            }
+        }
     }
 
     .tag-comentario{

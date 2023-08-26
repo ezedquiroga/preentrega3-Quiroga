@@ -37,6 +37,19 @@
     width: 200px;
 }
 
+.carousel-control-prev-icon{
+    background-color: dimgray;
+    position: relative;
+    top: 50px;
+}
+
+.carousel-control-next-icon{
+    background-color: dimgray;
+    position: relative;
+    top: 50px;
+    left: 1320px;
+}
+
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -81,13 +94,33 @@ main ul {
 
 @media (max-width: 1368px){
     .cards{
-        width: 1210px;
+        width: 1180px;
+        justify-content: center;
+    }
+
+    .carousel-control-next-icon{
+        left: 969px;
     }
 }
 
 @media (max-width: 770px){
     .cards{
-        width: 700px;
+        width: 600px;
+        gap: 10px;
+        position: relative;
+        top: 0px;
+        left: -6px;
+        
+    }
+    .carousel-control-next-icon{
+        position: fixed;
+        top: 408px;
+        left: 719px;
+    }
+    .carousel-control-prev-icon{
+        position: fixed;
+        top: 408px;
+        left: 165px;
     }
 }
 
@@ -96,6 +129,9 @@ main ul {
         padding-left: 70px;
         width: 420px;
         gap: 10px;
+        .card{
+            align-items: center;
+        }
     }
 
     .main-productos {
@@ -107,5 +143,16 @@ main ul {
             "navflex"
             "carousel1"
         ;
+    }
+
+    .carousel-control-next-icon{
+        position: fixed;
+        top: 625px;
+        left: 351px;
+    }
+    .carousel-control-prev-icon{
+        position: fixed;
+        top: 625px;
+        left: 95px;
     }
 }
