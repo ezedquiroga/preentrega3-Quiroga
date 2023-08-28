@@ -64,12 +64,12 @@
             border-radius: 5px;
         }
         .card-title{
-            font-family: 'Stick No Bills', sans-serif;
+            font-family: $font;
             font-weight: 800;
             font-size: 20px;
         }
         .card-text{
-            font-family: 'Stick No Bills', sans-serif;
+            font-family: $font;
             border-bottom: 1px solid gray;
             font-size: 20px;
         }
@@ -83,7 +83,7 @@
 
 .nav-link {
     color: darkslategray !important;
-    font-family: 'Stick No Bills', sans-serif;
+    font-family: $font;
     font-weight: 600 !important;
     font-size: larger !important;
 }

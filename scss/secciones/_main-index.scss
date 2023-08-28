@@ -7,7 +7,7 @@
 .tag {
     text-transform: uppercase;
     font-size: 25px;
-    font-family: 'Stick No Bills', sans-serif;
+    font-family: $font;
     font-weight: bold;
     padding-left: 50px;
     padding-top: 10px;
@@ -40,12 +40,12 @@
             border-radius: 5px;
         }
         .card-title{
-            font-family: 'Stick No Bills', sans-serif;
+            font-family: $font;
             font-weight: 800;
             font-size: 20px;
         }
         .card-text{
-            font-family: 'Stick No Bills', sans-serif;
+            font-family: $font;
             border-bottom: 1px solid gray;
             font-size: 20px;
         }
@@ -62,7 +62,7 @@
     padding-bottom: 12px;
 
     .texto {
-        font-family: 'Stick No Bills', sans-serif;
+        font-family: $font;
         text-align: center;
         font-size: larger;
         font-weight: 600;
@@ -84,12 +84,12 @@
             padding-left: 20px;
         }
         .card-title{
-            font-family: 'Stick No Bills', sans-serif;
+            font-family: $font;
             font-weight: 800;
             font-size: 20px;
         }
         .card-text{
-            font-family: 'Stick No Bills', sans-serif;
+            font-family: $font;
             border-bottom: 1px solid gray;
             font-size: 20px;
             text-align: justify;

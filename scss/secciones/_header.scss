@@ -63,7 +63,7 @@
 }
 
 .pages a {
-    font-family: 'Stick No Bills', sans-serif;
+    font-family: $font;
     font-weight: 600;
     font-size: larger;
     text-decoration: none;
@@ -192,7 +192,7 @@
     }
 
     .pages a {
-        font-family: 'Stick No Bills', sans-serif;
+        font-family: $font;
         font-size: small;
     }
 
